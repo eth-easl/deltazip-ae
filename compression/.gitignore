@@ -1,0 +1,16 @@
+.cache/
+*.pyc
+outputs/
+.vscode/
+.experiments
+build/
+*.log
+*.egg-info/
+artifact/data
+artifact/benchmark_*.json
+*.sif
+*.csv
+*.png
+.build/
+.local/
+.artifact/

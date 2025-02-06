@@ -1,0 +1,3 @@
+export HF_TOKEN=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
+export NUM_COPIES=32
+export WORKDIR=/scratch/xiayao

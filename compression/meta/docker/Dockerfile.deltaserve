@@ -1,0 +1,13 @@
+FROM ghcr.io/xiaozheyao/deltaserve:0.0.1
+
+ENV MAX_JOBS=16
+ARG TORCH_CUDA_ARCH_LIST="8.0 8.6"
+COPY . /deltazip
+WORKDIR /deltazip
+
+RUN pip install -r /deltazip/requirements.txt
+RUN pip install --no-deps .
+
+RUN git clone --depth 1 https://github.com/EleutherAI/lm-evaluation-harness && cd lm-evaluation-harness && pip install -e .
+RUN git clone --branch branch-23.10 https://github.com/xiaozheyao/kvikio.git && cd kvikio && ./build.sh kvikio
+RUN cd /workspace && pip install -e . --no-build-isolation

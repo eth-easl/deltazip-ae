@@ -1,0 +1,3 @@
+tabulate
+huggingface_hub
+tqdm
