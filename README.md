@@ -258,7 +258,7 @@ python3 scripts/helpers/bench.py --workload scripts/workload/azure.ar=0.5.jsonl 
 
 Once the client finishes, you can stop the server with `Ctrl+C`. Please also check if the docker container exits properly by `docker ps`. If it is still running, please execute `docker stop [container ID]`.
 
-### 3.2. Aggregate the results
+### 3.3. Aggregate the results
 
 You can then aggregate the results with the following command:
 
