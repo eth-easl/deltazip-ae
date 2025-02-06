@@ -242,6 +242,8 @@ In another terminal, run the following command to start the client:
 python3 scripts/helpers/bench.py --workload scripts/workload/azure.ar=0.5.jsonl --base-model meta-llama/Llama-2-13b-hf --output $WORKDIR/results
 ```
 
+Once the client finishes, you can stop the server with `Ctrl+C`. Please also check if the docker container exits properly by `docker ps`. If it is still running, please execute `docker stop [container ID]`.
+
 ### 3.2. Evaluate the serving performance of the uncompressed model
 
 ```bash
@@ -253,6 +255,8 @@ In another terminal, run the following command to start the client:
 ```bash
 python3 scripts/helpers/bench.py --workload scripts/workload/azure.ar=0.5.jsonl --base-model meta-llama/Llama-2-13b-hf --output $WORKDIR/results
 ```
+
+Once the client finishes, you can stop the server with `Ctrl+C`. Please also check if the docker container exits properly by `docker ps`. If it is still running, please execute `docker stop [container ID]`.
 
 ### 3.2. Aggregate the results
 
