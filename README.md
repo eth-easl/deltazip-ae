@@ -149,7 +149,8 @@ Compression ratio: 9.86x
 +------------------------------------+------------+----------+
 ```
 
-and you should expect the two models to have similar accuracy on these tasks.
+and you should expect the two models to have similar accuracy on these tasks. Here `lmsys.vicuna-7b-v1.5.2b_2n4m_128bs` refers to the model compressed using deltazip with 2-bit precision and 50% sparsity, and `lmsys.vicuna-7b-v1.5` refers to the original model.
+
 
 ### 2.1. [Optional] Compress with Baselines
 
@@ -198,6 +199,8 @@ Original model size: 12853.13MB
 |         lmsys.vicuna-7b-v1.5          | truthfulqa |  41.64%  |
 +---------------------------------------+------------+----------+
 ```
+
+(Here `lmsys.vicuna-7b-v1.5.2b_2n4m_128bs` refers to the model compressed using deltazip with 2-bit precision and 50% sparsity, and `lmsys.vicuna-7b-v1.5` refers to the original model. `awq.lmsys.vicuna-7b-v1.5.4b128g` refers to the model compressed using AWQ with 4-bit precision, and `sparsegpt.lmsys.vicuna-7b-v1.5.4b128g` refers to the model compressed using SparseGPT with 4-bit precision and 50% sparsity.)
 
 (Note: Due to some randomness in the compression process, the exact accuracy numbers and compression ratio may vary *slightly*. But in general we expect the compression ratio of DeltaZip to be around 10x, AWQ to be around 3.5x and SparseGPT to be around 5x. The accuracy of DeltaZip and AWQ should be similar to the original model, while the accuracy of SparseGPT should be lower.)
 
