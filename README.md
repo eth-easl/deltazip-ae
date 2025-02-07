@@ -214,7 +214,7 @@ Note 1: In the paper, we run our experiments on a high-performance HPC cluster. 
 
 ### 3.0. Prepare the Model Weights
 
-[**You can skip this step if the deltas are already prepared on the system, please check the `$WORKDIR/models/deltas` and `$WORKDIR/models/full` directory**] In order to evaluate the serving performance of our system, we first need to compress the 13b model, prepare the delta weights and create multiple copies.
+[**You can skip this step if the deltas are already prepared on the system (which should be already), please check the `$WORKDIR/models/deltas` and `$WORKDIR/models/full` directory**] In order to evaluate the serving performance of our system, we first need to compress the 13b model, prepare the delta weights and create multiple copies.
 
 ```bash
 bash scripts/3_compress_13b.sh
