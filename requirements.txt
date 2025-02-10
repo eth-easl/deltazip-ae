@@ -1,3 +1,3 @@
-tabulate
-huggingface_hub
-tqdm
+tabulate==0.9.0
+huggingface_hub==0.28.1
+tqdm==4.67.1
