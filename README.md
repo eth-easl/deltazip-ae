@@ -1,6 +1,8 @@
 # Evaluation README
 
-Artifact for Paper DeltaZip: [![Paper](https://img.shields.io/badge/arxiv-2312.05215-blue)](https://arxiv.org/abs/2312.05215).
+Artifact for Paper "***DeltaZip: Efficient Serving of Multiple Full-Model-Tuned LLMs***". 
+
+[![Paper](https://img.shields.io/badge/arxiv-2312.05215-blue)](https://arxiv.org/abs/2312.05215)
 
 ### Environment Setup
 
