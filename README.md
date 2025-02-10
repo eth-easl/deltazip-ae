@@ -50,6 +50,16 @@ This command compresses the Vicuna-1.5 7B model using DeltaZip down to 2 bit pre
 
 This command takes around ~20 to ~30 minutes to run.
 
+Note: the above command prints some debugging information, such as 
+
+```
+...
+[info] model.model.layers.18.post_attention_layernorm.weight is not saved
+...
+```
+
+and this information is expected (as we don't store the `layernorm.weight` anyway).
+
 ### 1.1 [Optional] Test the compressed model.
 
 ```bash
