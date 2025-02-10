@@ -1,5 +1,7 @@
 # Evaluation README
 
+Artifact for Paper DeltaZip: [![Paper](https://img.shields.io/badge/arxiv-2312.05215-blue)](https://arxiv.org/abs/2312.05215).
+
 ### Environment Setup
 
 We provide an pre-built docker image (`ghcr.io/xiaozheyao/deltazip:0.0.1`), as well as a running instance for artifact evaluation. We assume that you have a working ssh client and an ssh key pair. Please send us (email: xiaozhe.yao@inf.ethz.ch, or via hotcrp) your ssh public keys so that we can grant you access to the instance. 
