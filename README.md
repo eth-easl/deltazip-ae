@@ -18,7 +18,7 @@ ssh sgs
 
 Since the instance is expensive to run, we kindly request reviewers to inform us their planned evaluation time so that we can allocate the resources accordingly.
 
-If you want to run the evaluation on your own machine (the main part where we compress the model can be run on a single machine with a single NVIDIA GPU with >=24GB memory), you can pull the docker image with the following command:
+If you want to run the evaluation on your own machine (the main part where we compress the model can be run on a single machine with a single NVIDIA GPU with >=24GB GPU memory (VRAM) ), you can pull the docker image with the following command:
 
 ```bash
 docker pull ghcr.io/xiaozheyao/deltazip:0.0.1
@@ -94,7 +94,7 @@ To evaluate the accuracy of the original model, run the following command:
 bash scripts/2_eval_quality_original.sh
 ```
 
-The above commands will print the accuracy of the model in a table format:
+The above commands will print the accuracy of the model (depending on which command you run, `scripts/2_eval_quality_compressed.sh` prints the quality of the compressed model, and `scripts/2_eval_quality_original.sh` prints the original model) in a table format:
 
 ```bash
 |    Tasks     |Version|Filter|n-shot|  Metric   |   | Value |   |Stderr|
