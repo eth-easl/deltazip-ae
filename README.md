@@ -28,6 +28,8 @@ If you want to run the evaluation on your own machine (the main part where we co
 docker pull ghcr.io/xiaozheyao/deltazip:0.0.1
 ```
 
+If this is your first run, please install dependencies with `pip install -r requirements.txt`.
+
 We set `$WORKDIR` to be `/scratch/xiayao/` and will use `$WORKDIR` in this document. Please adjust the path accordingly if you are running the evaluation on your own machine.
 
 On the instance, all the necessary tools, model weights are stored in the `$WORKDIR` directory. We use `$WORKDIR/deltazip-ae` as the working directory. You can find the source code of this repo in the `deltazip-ae` directory.
@@ -43,6 +45,18 @@ export WORKDIR=/scratch/xiayao/
 cd $WORKDIR/deltazip-ae
 source scripts/env.sh
 ```
+
+If you want to run locally, please perform these steps:
+
+```bash
+git clone https://github.com/eth-easl/deltazip-ae.git
+export HF_TOKEN=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
+export NUM_COPIES=32
+export WORKDIR=$(pwd)
+cd $WORKDIR/deltazip-ae
+```
+
+Alternatively you can also modify `scripts/env.sh` to include your environment variables.
 
 ### 1. Compress Vicuna-1.5 7B model.
 
