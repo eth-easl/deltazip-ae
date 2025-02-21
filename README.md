@@ -324,3 +324,12 @@ Note: the performance numbers may vary depending on the exact machine you are ru
 ```bash
 bash scripts/4_cleanup.sh
 ```
+
+
+### Additional Notes
+
+- To build the docker image from scratch, you can run the following command:
+
+```bash
+bash extra/build_docker.sh
+```
